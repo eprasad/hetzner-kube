@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xetys/hetzner-kube/pkg"
+	"github.com/eprasad/hetzner-kube/pkg"
 )
 
 const rewriteTpl = `cat /etc/kubernetes/%s | sed -e 's/server: https\(.*\)/server: https:\/\/127.0.0.1:16443/g' > /tmp/cp && mv /tmp/cp /etc/kubernetes/%s`
