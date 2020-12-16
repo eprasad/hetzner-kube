@@ -18,6 +18,7 @@ apiServer:
   featureGates:
     CSINodeInfo: true
     CSIDriverRegistry: true
+    IPv6DualStack: true
   certSANs:
     - 127.0.0.1
 %s%s
